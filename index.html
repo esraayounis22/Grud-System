@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container bg-light">
+<div class="mx-auto w-75 my-5">
+    <div class="form-group pt-5">
+    <label for="productName">Product_Name :</label>
+   <input type="text" id="productName" name="" class="form-control mt-2">
+   <small class="text-muted "> please enter your product name</small>
+</div>
+<br>
+<div class="form-group ">
+    <label for="productPrice">Product_Price :</label>
+   <input type="number" id="productPrice" name="" class="form-control mt-2">
+   <small class="text-muted "> please enter your product name</small>
+</div>
+<br>
+<div class="form-group ">
+    <label for="productCategory">Product_Category:</label>
+   <input type="text" id="productCategory" name="" class="form-control mt-2">
+   <small class="text-muted"> please enter your product name</small>
+</div>
+<br>
+<div class="form-group ">
+    <label for="productDesc">Product_Desc :</label>
+   <textarea type="text" id="productDesc" name="" class="form-control mt-2"></textarea>
+   <small class="text-muted"> please enter your product name</small>
+</div>
+<br>
+<button id="mainBtn"  onclick="addProduct()"  class="btn btn-info mb-3"> add product</button>
+
+
+</div>
+</div>
+<div class="search w-50 mx-auto">
+<input type="text" onkeyup="searchproduct(this.value)" class="form-control" name="" placeholder="search by entering the productName">
+</div>
+
+<div class="mx-auto w-75 my-5">
+    <table class="table table-striped">
+        <thead>
+            <th>Index</th>
+            <th>productName</th>
+            <th>productPrice</th>
+            <th>productCategory</th>
+            <th>productDesc</th>
+            <th >Update</th>
+            <th>Delete</th>
+
+        </thead>
+        <tbody id="tableBody">
+         
+
+        </tbody>
+    </table>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
